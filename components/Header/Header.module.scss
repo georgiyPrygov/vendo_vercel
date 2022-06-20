@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.Header {
+  background-color: $darkgray;
+  padding: 23px 0;
+  position: relative;
+  @media (max-width: 1024px) {
+    padding: 15px 0;
+  }
+  &__content {
+    max-width: $contenwidth + 36px;
+    padding: 0 18px;
+    margin: 0 auto;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+    &__topLine {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__mobile {
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+}

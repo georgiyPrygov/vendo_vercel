@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.SearchBar {
+  max-width: 872px;
+  margin: 37px auto 24px auto;
+  position: relative;
+  input {
+    width: 100%;
+    color: $darkgray;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 17px;
+    outline: none;
+    border: none;
+    &::placeholder {
+      color: $placeholdercolor;
+    }
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+  }
+}

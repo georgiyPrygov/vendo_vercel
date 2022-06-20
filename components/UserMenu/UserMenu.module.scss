@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.UserMenu {
+  display: flex;
+  align-items: center;
+  a {
+    margin: 0 0 0 36px;
+    color: $lightgray;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 10px;
+      @media (max-width: 1024px) {
+        margin-right: 6px;
+      }
+    }
+  }
+  &__total {
+    font-weight: 400;
+    opacity: 0.5;
+    margin-left: 6px;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+    &__items {
+      margin-left: 3px;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .UserMenu__profile {
+      display: none;
+    }
+  }
+}

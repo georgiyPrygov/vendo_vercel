@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.MainMenu {
+  select {
+    margin-right: 10px;
+    cursor: pointer;
+    outline: none;
+  }
+  a {
+    margin: 0 10px;
+  }
+  select,
+  a {
+    border: none;
+    background-color: transparent;
+    color: $lightgray;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}

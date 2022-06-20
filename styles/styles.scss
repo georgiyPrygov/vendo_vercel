@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 html,
 body {
   padding: 0;
@@ -5,7 +7,14 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+body {
+  font-family: $mainfont;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +22,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }

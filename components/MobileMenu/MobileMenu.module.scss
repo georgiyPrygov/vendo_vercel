@@ -1,0 +1,137 @@
+@import "../../styles/variables.scss";
+
+.container {
+  padding: 0 15px;
+  &__topLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__toggle {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 20px;
+    cursor: pointer;
+  }
+  &__content {
+    display: none;
+    &.active {
+      display: block;
+      min-height: 100vh;
+    }
+  }
+  &__categories {
+    display: grid;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: $lightgray;
+    text-transform: uppercase;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid $gray;
+    cursor: pointer;
+    &.hidden {
+      display: none;
+    }
+  }
+  &__submenu {
+    display: none;
+    &__title {
+      color: $lightgray;
+      border-bottom: 1.5px solid $gray;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 31px;
+      position: relative;
+      padding-bottom: 28px;
+      text-align: center;
+      cursor: pointer;
+      svg {
+        transform: rotate(180deg);
+        position: absolute;
+        left: 0;
+        top: 8px;
+      }
+    }
+    &.active {
+      display: block;
+    }
+  }
+  &__col {
+    &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $lightgray;
+      text-transform: uppercase;
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1.5px solid $gray;
+      svg {
+        transform: rotate(90deg);
+        cursor: pointer;
+      }
+      &.active {
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $gray;
+      padding: 20px 0;
+      border-bottom: 1px solid $lightgray;
+    }
+    &__nodropdown {
+      padding: 0;
+      &__item {
+        &:last-child {
+          a {
+            .container__col__title {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__subcategories {
+    display: none;
+    background-color: #fff;
+    margin: 0 -15px;
+    padding: 0 15px;
+    &.active {
+      display: block;
+    }
+  }
+  &__additional {
+    margin-top: 34px;
+    display: grid;
+    grid-gap: 24.5px;
+    &.hidden {
+      display: none;
+    }
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: $lightgray;
+      display: block;
+    }
+  }
+}
