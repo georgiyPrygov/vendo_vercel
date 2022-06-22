@@ -1,3 +1,4 @@
+import React from 'react';
 import { SVG } from "../../utils/SVG";
 import styles from "./SearchBar.module.scss";
 

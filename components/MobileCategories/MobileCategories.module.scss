@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+
+.container {
+  padding: 0 15px;
+  &__categories {
+    display: grid;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: $lightgray;
+    text-transform: uppercase;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid $gray;
+    cursor: pointer;
+    &.hidden {
+      display: none;
+    }
+  }
+}

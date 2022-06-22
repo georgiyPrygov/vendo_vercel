@@ -1,3 +1,4 @@
+import React from 'react';
 import Document, {
   Html,
   Head,
@@ -5,6 +6,7 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
+import 'regenerator-runtime/runtime';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

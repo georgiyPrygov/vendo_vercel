@@ -1,3 +1,4 @@
+import React from 'react';
 import Link from "next/link";
 import HeroMenu from "../HeroMenu/HeroMenu";
 import MainMenu from "../MainMenu/MainMenu";

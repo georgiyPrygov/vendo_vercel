@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.container {
+  &__col {
+    &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $lightgray;
+      text-transform: uppercase;
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1.5px solid $gray;
+      svg {
+        transform: rotate(90deg);
+        cursor: pointer;
+      }
+      &.active {
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $gray;
+      padding: 20px 0;
+      border-bottom: 1px solid $lightgray;
+    }
+  }
+  &__subcategories {
+    display: none;
+    background-color: #fff;
+    margin: 0 -15px;
+    padding: 0 15px;
+    &.active {
+      display: block;
+    }
+  }
+}
